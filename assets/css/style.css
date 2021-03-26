@@ -92,7 +92,7 @@ header .coluna-direita{
 header .coluna figure{}
 header .coluna img{
     max-width: 230px;
-    border-radius: 40%;
+    border-radius: 100%;
 }
 header .coluna h1{
     font-size: 1.5rem;
@@ -115,7 +115,6 @@ header .coluna ul li a{
 header nav .redes-sociais{
     display: flex;
     justify-content: center;
-    border-top: 1px solid rgb(255 255 255 / 20%);
 }
 header nav .redes-sociais li{
     margin: 0 14px;
@@ -274,8 +273,10 @@ main .coluna section ul li p{}
     }
     header .coluna img{
         max-width: 200px;
-        border-radius: 40%;
-        vertical-align: middle;
+        border-radius: 100%;
+    }
+    header .linha .coluna{
+        margin: 0 auto;
     }
 
   }
