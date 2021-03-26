@@ -290,9 +290,11 @@ label{
     position: absolute;
     top: 30px;
     right: 30px;
+    width: 52px;
+    height: 30px;
     background-color: var(--corBackgroundSecundaria);
     border-radius: 20px;
-    padding: 5px 15px;
+    padding: 5px 5px;
     box-sizing: border-box;
     cursor: pointer;
 }
@@ -301,8 +303,18 @@ label span{
     height: 20px;
     display: block;
     background-color: #d4e9ff;
-    border-radius:100%;
-    text-align: left;
+    border-radius: 100%;
+    transition: all ease .3s;
+}
+
+.ativar-dark:checked ~ .dark-mode label{
+    background-color: #d4e9ff;
+}
+.ativar-dark:checked ~ .dark-mode label span{
+    background-color: var(--corBackgroundSecundaria);
+    /* margin-left: 21px; */
+    transform: translateX(21px);
+    transition: all ease .3s;
 }
 
 .ativar-dark:checked ~ .dark-mode{
